@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@types/audio-context": "^1.0.1",
+    "@types/jquery": "^3.5.14"
+  },
+  "dependencies": {
+    "@types/jqueryui": "^1.12.16",
+    "jquery": "^3.6.0",
+    "react-sound": "^1.2.0",
+    "use-sound": "^4.0.1"
+  }
+}

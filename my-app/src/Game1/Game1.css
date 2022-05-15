@@ -1,0 +1,164 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #EFE1CE;
+ 
+}
+
+
+
+
+.main-ui {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.our-form {
+width: 100%; 
+margin-left: 25px;
+padding:15px;
+display: flex;
+justify-content: center;
+margin-left: 28%;
+
+}
+/* תיבת טקסט */
+.our-form .our-field{
+width: 40%;
+padding: 15px;
+font-size: 1.2rem;
+border-style:double;
+border-radius: 8px;
+margin:auto;
+
+}
+
+
+
+
+.main-ui .status {
+  text-align: center;
+  font-size: 1.5rem;
+ margin-top: 20px;
+ color:#A0522D ;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ text-shadow: 1px 1px 2px black, 0 0 25px #9e8d8d, 0 0 5px rgb(246, 246, 252) ;
+}
+
+.progress .boxes {
+  display: flex;
+  width: 100%;
+  border-style:inherit;
+  border-radius: 10px;
+}
+
+.progress {
+  border: 1px solid #c7c7c7;
+  /* border-right: none; */
+  position: relative;
+  margin-top: 30px;
+}
+
+.progress .progress-inner {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 100%;
+  background-color: #09e129;
+  opacity: .57;
+  transform: scaleX(0);
+  transform-origin: center left;
+  transition: transform .4s ease-out;
+}
+
+.boxes .box {
+  height: 40px;
+  border-right: 2px solid #c7c7c7;
+  flex: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .33s ease-out;
+  transform: scale(1.2);
+}
+
+.overlay-inner {
+  text-align: center;
+  max-width: 700px;
+}
+
+body.overlay-is-open .overlay,
+.overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+body.overlay-is-open .main-ui,
+.blurred {
+  filter: blur(4px);
+}
+
+@keyframes showError {
+  50% {
+    color: red;
+    transform: scale(1.2);
+  }
+
+  100% {
+    color: #333;
+    transform: scale(1);
+  }
+}
+
+.animate-wrong {
+  animation: .45s showError;
+  
+}
+
+.main-ui .problem {
+  font-size: 8rem;
+  margin: 0;
+  text-align: center;
+  color:#34568b ;
+  font-family:cursive;
+  margin-top: -550px;
+}
+
+.overlay-inner .end-message {
+  font-size: 5rem;
+  margin-top: 0;
+}
+
+.overlay-inner .reset-button {
+  font-size: 3rem;
+  background-color: #6a060bdc;
+  border: none;
+  color: #FFF;
+  border-radius: 7px;
+  padding: 12px 20px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.overlay-inner .reset-button:hover {
+  background-color: #a14e4e;
+}
+
+.overlay-inner .reset-button:focus {
+  background-color: #a14e4e;
+}

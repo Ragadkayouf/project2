@@ -1,0 +1,66 @@
+.background{
+    background-image: url(https://thumbs.dreamstime.com/b/cartoon-nature-scene-beautiful-farm-house-near-forest-illustration-children-medieval-architecture-vintage-159917598.jpg);
+width:50%;
+margin: auto;
+padding:5px;
+background-size:auto;
+margin-top: -20px;
+border-radius: 25px;
+
+}
+.title{
+    font-size:150%;
+    margin-top: -65px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px rgba(7, 7, 7, 0.845);
+    color: rgba(129, 24, 24, 0.877);
+}
+
+.SignUp{
+    width: 100px;
+    min-width: 400px;
+    font-size: 50%;
+    color: bisque;  
+    text-shadow: black 2px 2px 2px;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 600 ;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    
+}
+
+.SignUp label{
+    margin: 0 auto;
+    display: table;
+    font-size: 1.1rem;
+
+}
+
+.SignUp input{
+    border:solid rgba(129, 24, 24, 0.877) 2px;
+    margin: 0 auto;
+    display: table;
+    width: 95%;
+    padding: 10px;
+
+}
+
+
+
+input[type=submit]{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(129, 24, 24, 0.877);
+    color: bisque ;
+    width: 40%;
+    font-size: large;
+
+} 
+
+#username::placeholder{
+    text-align: right;
+ }

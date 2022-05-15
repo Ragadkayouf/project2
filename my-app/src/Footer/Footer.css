@@ -1,0 +1,14 @@
+.footer{
+        margin-top: 1rem;
+        padding: 1.5rem;
+        background-color: white;
+        position:relative;
+        bottom: 0;
+        width: 100%;
+        color:rgba(129, 24, 24, 0.877);
+        font-size: 2rem;
+        justify-content: center;
+        display: flex;
+
+        
+}
